@@ -70,11 +70,14 @@ Things can be Improved:
 
 ## How to use
 ### Makefile!!
-Makefile is essential tool for building binary.  
+Makefile is essential tool for building binary in general. In this project makefile is used to help building app binaries.   
 
 `make db-refresh` command to refresh the database migration.
+
 `make db-seed` command to seed the data using given csv files in the repository. You don't need to because the app already ship with sqlite database included.
+
 `make run-http` command to run the app.
+
 `make test` command to run unit tests inside the entire app.
 
 You only need to run make run-http to execute the app. The server will be served on localhost:8080.
