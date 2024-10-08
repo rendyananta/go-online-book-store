@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="app-http" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="example-online-book-store" />
+    <working_directory value="$PROJECT_DIR$" />
+    <go_parameters value="-tags fts5" />
+    <envs>
+      <env name="AUTH_CIPHER_KEYS" value="1fYGJsZSQuI0EQEbnCkkMYIh78epX7Tb" />
+    </envs>
+    <EXTENSION ID="com.github.l34130.mise" MISE_ENABLED="false" />
+    <kind value="PACKAGE" />
+    <package value="github.com/rendyananta/example-online-book-store/cmd/http" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/cmd/http/main.go" />
+    <method v="2" />
+  </configuration>
+</component>
