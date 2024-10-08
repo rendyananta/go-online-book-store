@@ -84,11 +84,13 @@ You only need to run make run-http to execute the app. The server will be served
 ### User registration
 ```shell
 curl --request POST \
-  --url http://localhost:8080/auth/token \
+  --url http://localhost:8080/auth/register \
   --header 'Content-Type: application/json' \
   --data '{
-	"email": "rendy@email.com",
-	"password": "password"
+	"email": "rendy+2@email.com",
+	"name": "Rendy",
+	"password": "password",
+	"password_confirmation": "password"
 }'
 ```
 
@@ -107,18 +109,6 @@ curl --request POST \
 ```shell
 curl --request GET \
   --url http://localhost:8080/books
-```
-
-### Get all books
-```shell
-curl --request GET \
-  --url http://localhost:8080/books
-```
-
-### Get all books for the next page
-```shell
-curl --request GET \
-  --url 'http://localhost:8080/books?last_id=01926c92-1827-7817-975f-5f5d6db677af'
 ```
 
 ### Get all books for the next page
